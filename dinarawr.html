@@ -1,0 +1,279 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>3 Bulan Bersama Dinara 💖</title>
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&family=Playfair+Display&display=swap');
+
+    body {
+      margin: 0;
+      font-family: 'Poppins', sans-serif;
+      background: linear-gradient(135deg, #ff9a9e 0%, #87cefa 100%);
+      color: #3b2e5a;
+      overflow-x: hidden;
+      min-height: 100vh;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      padding: 20px 0 60px;
+      transition: background 2s ease;
+    }
+
+    h1 {
+      font-family: 'Playfair Display', serif;
+      font-weight: 600;
+      font-size: 3.5rem;
+      text-align: center;
+      margin: 40px 0 20px;
+      letter-spacing: 1.2px;
+      color: #472f5f;
+      text-shadow: 1px 1px 6px rgba(255, 192, 203, 0.6);
+    }
+
+    .made-by {
+      position: fixed;
+      bottom: 12px;
+      left: 12px;
+      font-size: 13px;
+      color: #472f5fdd;
+      background: rgba(255 192 203 / 0.35);
+      padding: 5px 12px;
+      border-radius: 10px;
+      user-select: none;
+      font-weight: 500;
+      font-family: 'Poppins', sans-serif;
+      box-shadow: 0 0 8px rgba(255 192 203,0.6);
+    }
+
+    .heart-shape {
+      position: relative;
+      width: 520px;
+      height: 470px;
+      margin: 40px auto 0;
+      filter: drop-shadow(0 4px 8px rgba(0,0,0,0.2));
+    }
+
+    .heart-shape img {
+      position: absolute;
+      width: 54px;
+      height: 54px;
+      object-fit: cover;
+      border-radius: 15px;
+      border: 2px solid #fff;
+      animation: floaty 4s ease-in-out infinite;
+      box-shadow: 0 3px 8px rgba(0,0,0,0.15);
+      transition: transform 0.3s ease;
+      cursor: pointer;
+    }
+    .heart-shape img:hover {
+      transform: scale(1.2) rotate(5deg);
+      z-index: 10;
+      box-shadow: 0 8px 15px rgba(0,0,0,0.3);
+    }
+
+    @keyframes floaty {
+      0%, 100% { transform: translateY(0); }
+      50% { transform: translateY(-8px); }
+    }
+
+    .background-floating {
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100vw;
+      height: 100vh;
+      overflow: hidden;
+      z-index: -1;
+      pointer-events: none;
+    }
+
+    .background-floating img {
+      position: absolute;
+      width: 80px;
+      opacity: 0.75;
+      filter: drop-shadow(0 0 5px rgba(0,0,0,0.1));
+      animation: driftUp linear infinite;
+      border-radius: 20px;
+      border: 1.5px solid rgba(255 192 203 / 0.6);
+      transition: transform 0.4s ease;
+    }
+    .background-floating img:hover {
+      transform: scale(1.15);
+      filter: drop-shadow(0 0 12px rgba(255,192,203,0.8));
+    }
+
+    @keyframes driftUp {
+      0% { transform: translateY(100vh); }
+      100% { transform: translateY(-100vh); }
+    }
+
+    .pesan-btn {
+      margin: 50px auto 20px;
+      padding: 15px 36px;
+      font-size: 18px;
+      font-weight: 600;
+      background-color: #ff6f91;
+      color: #fff;
+      border: none;
+      border-radius: 30px;
+      cursor: pointer;
+      box-shadow: 0 5px 12px rgba(255,111,145,0.6);
+      transition: background-color 0.3s ease;
+      user-select: none;
+      font-family: 'Poppins', sans-serif;
+      letter-spacing: 0.8px;
+      max-width: 240px;
+      text-align: center;
+      display: block;
+    }
+    .pesan-btn:hover {
+      background-color: #e3506f;
+    }
+
+    .pesan {
+      display: none;
+      max-width: 680px;
+      background: rgba(255 255 255 / 0.95);
+      padding: 32px 36px;
+      border-radius: 25px;
+      font-size: 18px;
+      line-height: 1.7;
+      color: #472f5f;
+      font-family: 'Poppins', sans-serif;
+      box-shadow: 0 6px 15px rgba(0,0,0,0.12);
+      user-select: text;
+      margin-bottom: 60px;
+      white-space: pre-line;
+    }
+
+    .audio-controls {
+      margin: 20px auto 0;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      gap: 10px;
+    }
+
+    .audio-controls button {
+      background: #ff6f91;
+      border: none;
+      border-radius: 25px;
+      color: white;
+      font-weight: 600;
+      padding: 10px 22px;
+      cursor: pointer;
+      box-shadow: 0 4px 10px rgba(255,111,145,0.5);
+      transition: background-color 0.3s ease;
+      font-family: 'Poppins', sans-serif;
+      letter-spacing: 0.6px;
+    }
+
+    .audio-controls button:hover {
+      background-color: #e3506f;
+    }
+  </style>
+</head>
+<body>
+  <h1>3 Bulan Bersama Dinara 💖</h1>
+
+  <div class="background-floating">
+    <img src="images/anim1.jpg" style="left: 10%; animation-duration: 22s;" />
+    <img src="images/anim2.jpg" style="left: 20%; animation-duration: 26s;" />
+    <img src="images/anim3.jpg" style="left: 30%; animation-duration: 24s;" />
+    <img src="images/anim4.jpg" style="left: 40%; animation-duration: 28s;" />
+    <img src="images/anim5.jpg" style="left: 50%; animation-duration: 23s;" />
+    <img src="images/anim6.jpg" style="left: 60%; animation-duration: 27s;" />
+    <img src="images/anim7.jpg" style="left: 70%; animation-duration: 30s;" />
+    <img src="images/anim8.jpg" style="left: 80%; animation-duration: 25s;" />
+    <img src="images/anim9.jpg" style="left: 90%; animation-duration: 29s;" />
+    <img src="images/anim10.jpg" style="left: 15%; animation-duration: 26s;" />
+  </div>
+
+  <div class="heart-shape" id="heart"></div>
+
+  <button class="pesan-btn" onclick="tampilPesan()">Klik buat liat pesannya 💌</button>
+  <div class="pesan" id="pesan">
+    dinara,<br /><br />
+    3 bulan ini terasa seperti perjalanan indah yang penuh warna. aku ingat pertama kali kita ketemu, hatiku langsung tahu bahwa kamu adalah seseorang yang spesial. setiap hari bersama kamu seperti cerita baru yang penuh tawa, pelukan hangat, dan canda yang gak pernah habis.<br /><br />
+    aku gak cuma sayang sama kamu, tapi juga bersyukur karena kamu sudah jadi tempat aku berbagi segala rasa. kamu adalah sahabat terbaik sekaligus cinta sejati yang aku miliki. walaupun kadang kita punya beda pendapat, tapi aku yakin kita bisa lewati semuanya karena kamu dan aku selalu berusaha buat saling mengerti.<br /><br />
+    aku janji, aku bakal terus jadi versi terbaik untuk kamu, nemenin kamu di setiap suka dan duka, dari pagi sampai malam, dari mimpi sampai kenyataan. terima kasih sudah percaya sama aku, sudah sabar dan selalu ada di samping aku. aku harap ini baru awal dari perjalanan panjang kita yang penuh cinta dan kebahagiaan.<br /><br />
+    aku sayang kamu banget, dinara.<br /><br />
+    - diaz 💙
+  </div>
+
+  <div class="audio-controls">
+    <audio id="musik" src="music/lagu.mp3" preload="auto"></audio>
+    <button onclick="playPause()">▶️ Play / Pause</button>
+    <button onclick="muteUnmute()">🔈 Mute / Unmute</button>
+  </div>
+
+  <div class="made-by">dibuat oleh diaz</div>
+
+  <script>
+    const heart = document.getElementById('heart');
+    const total = 20;
+    const centerX = 260;
+    const centerY = 230;
+    const scale = 14;
+
+    for (let i = 0; i < total; i++) {
+      const angle = Math.PI * 2 * (i / total);
+      const x = scale * 16 * Math.pow(Math.sin(angle), 3);
+      const y =
+        -scale *
+        (13 * Math.cos(angle) -
+          5 * Math.cos(2 * angle) -
+          2 * Math.cos(3 * angle) -
+          Math.cos(4 * angle));
+
+      const img = document.createElement('img');
+      img.src = `images/foto${i + 1}.jpg`;
+      img.style.left = `${centerX + x}px`;
+      img.style.top = `${centerY + y}px`;
+      img.title = `Foto ${i + 1}`;
+      heart.appendChild(img);
+    }
+
+    function tampilPesan() {
+      const pesanDiv = document.getElementById('pesan');
+      if (pesanDiv.style.display === 'block') {
+        pesanDiv.style.display = 'none';
+      } else {
+        pesanDiv.style.display = 'block';
+        window.scrollTo({ top: document.body.scrollHeight, behavior: 'smooth' });
+      }
+    }
+
+    // musik control
+    const musik = document.getElementById('musik');
+    let fadeOutInterval;
+
+    musik.addEventListener('ended', () => {
+      // fade out effect
+      let vol = 1;
+      fadeOutInterval = setInterval(() => {
+        if (vol > 0) {
+          vol -= 0.05;
+          musik.volume = Math.max(vol, 0);
+        } else {
+          clearInterval(fadeOutInterval);
+          musik.pause();
+          musik.currentTime = 0;
+          musik.volume = 1;
+        }
+      }, 200);
+    });
+
+    function playPause() {
+      if (musik.paused) musik.play();
+      else musik.pause();
+    }
+
+    function muteUnmute() {
+      musik.muted = !musik.muted;
+    }
+  </script>
+</body>
+</html>
